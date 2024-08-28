@@ -4,31 +4,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Navigation Menu Styling */
-.navbar {
-    margin-left: 20px; /* Margin from the left border */
-}
-
-.navbar-nav {
-    margin-left: 20px; /* Margin between navbar items and left border */
-}
-
-.nav-link {
-    margin-right: 15px; /* Space between the navigation items */
-}
-
-/* Adjustments for mobile view */
-@media (max-width: 767px) {
-    .navbar-nav {
-        margin-left: 0; /* Remove margin for small screens */
-    }
-
-    .nav-link {
-        margin-right: 10px; /* Adjust space between items for small screens */
-    }
-}
-
-/* Existing styles below */
 .img-fluid {
     width: 100%;
     height: auto;
@@ -56,6 +31,7 @@ body {
     height: auto;
 }
 
+/* Flexbox layout for top content */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -64,16 +40,17 @@ body {
 }
 
 .left-content {
-    flex: 0 0 40%;
+    flex: 0 0 40%; /* Adjust width as needed */
     text-align: center;
 }
 
 .right-content {
     flex: 1;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 20px; /* Add space between image and text */
 }
 
+/* Projects Container */
 .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -81,19 +58,48 @@ body {
 }
 
 .project-item {
-    flex: 0 0 48%;
-    margin-bottom: 30px;
+    flex: 0 0 48%; /* Adjust to make space between items */
+    margin-bottom: 30px; /* Space between projects */
 }
 
 .project {
-    margin-top: 50px;
+    margin-top: 50px; /* Add space above each project */
 }
 
+/* Click for More link styling */
 .click-more-container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 50px; /* Space above the link */
+    margin-bottom: 50px; /* Space below the link */
 }
 
 .click-more-container .btn {
-    margin-top: 20px;
+    margin-top: 20px; /* Space above the button */
+}
+
+/* Responsive design for mobile view */
+@media (max-width: 768px) {
+    .top-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-content, .right-content {
+        flex: 1 0 100%;
+        padding-left: 0;
+    }
+
+    .right-content {
+        padding-top: 20px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item {
+        width: 100%;
+        margin-bottom: 20px; /* Space between projects */
+    }
 }
