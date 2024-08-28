@@ -19,3 +19,14 @@ body {
     font-size: 1.2em;
     line-height: 1.5;
 }
+
+.arrow-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.img-arrow {
+    width: 80%;
+    height: auto;
+}
