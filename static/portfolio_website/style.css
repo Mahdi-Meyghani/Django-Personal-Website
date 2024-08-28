@@ -103,3 +103,30 @@ body {
         margin-bottom: 20px; /* Space between projects */
     }
 }
+
+/* Navbar margin adjustments for responsive design */
+.navbar-nav {
+    margin-left: 140px; /* Adjust to align with content */
+}
+
+@media (max-width: 991px) { /* Small to medium screens */
+    .navbar-nav {
+        margin-left: 0; /* Remove margin on mobile */
+    }
+}
+
+/* static/portfolio_website/style.css */
+
+/* Other existing styles */
+
+/* Make the navbar sticky */
+.navbar-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 1020; /* Ensure the navbar stays on top of other content */
+}
+
+/* Optional: Add shadow to the navbar for better visibility */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
