@@ -115,10 +115,6 @@ body {
     }
 }
 
-/* static/portfolio_website/style.css */
-
-/* Other existing styles */
-
 /* Make the navbar sticky */
 .navbar-wrapper {
     position: sticky;
@@ -129,4 +125,13 @@ body {
 /* Optional: Add shadow to the navbar for better visibility */
 .navbar {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom animation durations */
+.animate__animated.animate__fadeIn {
+    animation-duration: 2s; /* Very slow animation */
+}
+
+.animate__animated.animate__fadeInUp {
+    animation-duration: 2s; /* Very slow animation */
 }
