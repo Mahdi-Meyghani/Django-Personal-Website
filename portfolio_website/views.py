@@ -9,3 +9,7 @@ def home(request):
         'projects_left': projects_left,
         'projects_right': projects_right
     })
+
+
+def contact(request):
+    return render(request, 'portfolio_website/contact.html')

@@ -4,6 +4,31 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Navigation Menu Styling */
+.navbar {
+    margin-left: 20px; /* Margin from the left border */
+}
+
+.navbar-nav {
+    margin-left: 20px; /* Margin between navbar items and left border */
+}
+
+.nav-link {
+    margin-right: 15px; /* Space between the navigation items */
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 767px) {
+    .navbar-nav {
+        margin-left: 0; /* Remove margin for small screens */
+    }
+
+    .nav-link {
+        margin-right: 10px; /* Adjust space between items for small screens */
+    }
+}
+
+/* Existing styles below */
 .img-fluid {
     width: 100%;
     height: auto;
@@ -31,7 +56,6 @@ body {
     height: auto;
 }
 
-/* Flexbox layout for top content */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -40,37 +64,14 @@ body {
 }
 
 .left-content {
-    flex: 0 0 40%; /* Adjust width as needed */
+    flex: 0 0 40%;
     text-align: center;
 }
 
 .right-content {
     flex: 1;
     text-align: left;
-    padding-left: 20px; /* Add space between image and text */
-}
-
-/* Responsive adjustments for mobile view */
-@media (max-width: 767px) {
-    .top-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .left-content {
-        flex: 0 0 100%; /* Full width on small screens */
-        margin-bottom: 20px;
-    }
-
-    .right-content {
-        flex: 0 0 100%; /* Full width on small screens */
-        padding-left: 0; /* Remove padding */
-    }
-
-    .img-arrow {
-        width: 100%; /* Full width of container */
-    }
+    padding-left: 20px;
 }
 
 .project-container {
@@ -80,33 +81,19 @@ body {
 }
 
 .project-item {
-    flex: 0 0 48%; /* Adjust to make space between items */
-    margin-bottom: 30px; /* Space between projects */
+    flex: 0 0 48%;
+    margin-bottom: 30px;
 }
 
 .project {
-    margin-top: 50px; /* Add space above each project */
+    margin-top: 50px;
 }
 
-/* Click for More link styling */
 .click-more-container {
-    margin-top: 50px; /* Space above the link */
-    margin-bottom: 50px; /* Space below the link */
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .click-more-container .btn {
-    margin-top: 20px; /* Space above the button */
-}
-
-/* Responsive adjustments for mobile view */
-@media (max-width: 767px) {
-    .project-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project-item {
-        flex: 0 0 100%; /* Full width on small screens */
-        margin-bottom: 20px;
-    }
+    margin-top: 20px;
 }
