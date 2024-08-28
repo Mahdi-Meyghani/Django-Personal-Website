@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahdi's Portfolio</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'portfolio_website/style.css' %}">
 </head>
 <body>
-Hi
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-5 text-center">
+                        <img src="{% static 'portfolio_website/pictures/me.jpg' %}" alt="Mahdi's Picture" class="img-fluid rounded mb-3">
+                    </div>
+                    <div class="col-md-7">
+                        <h1 class="display-4">Mahdi Meyghani</h1>
+                        <p class="lead">Hello there! 👋 I'm Mahdi, I'm a Python programmer focusing on backend. I spend most of my time working with awesome technologies like Django, Docker, SQL databases, etc. I love collaborating with teams and I'm always excited to learn and adapt to new tech! Below, you can find some of the cool Apps I have built in Python. Feel free to contact me!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
