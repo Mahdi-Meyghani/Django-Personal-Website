@@ -1,0 +1,22 @@
+title;description;url;image
+Todo App;A distraction-free web app to help you focus on your GOALS :).;https://github.com/Mahdi-Meyghani/todo-app;1.png
+Portfolio Website;A website built entirely in Python to showcase coding projects and apps.;https://github.com/Mahdi-Meyghani/Portfolio-Website;2.png
+PDF Templates;A script that generates PDF templates of multiple pages given some predefined guidelines.;https://github.com/Mahdi-Meyghani/PDF-Templates;3.png
+PDF Invoices;A script that reads invoice records from Excel files and automatically generates PDF invoices.;https://github.com/Mahdi-Meyghani/PDF-Invoices;4.png
+Positive News Site;A website that gets data from a news API and uses sentiment analysis to publish only positive news.;https://github.com/Mahdi-Meyghani/Daily-News;5.png
+Weather API;A REST API built with Python and Flask to serve historical weather data for various cities.;https://github.com/Mahdi-Meyghani/Historical-Weather-Data-API;6.png
+AI Chatbot;A chatbot built that can discuss anything with a human and is built using the OpenAI API.;https://github.com/Mahdi-Meyghani/AI-Chatbot;7.png
+Tour Scraper;A program that checks a music band's website and sends an email when there are new tours.;https://github.com/Mahdi-Meyghani/Music_Tour_Scraper;8.png
+Mario Game;A Super Mario game that you can play and enjoy.;https://github.com/Mahdi-Meyghani/super-mario-python;9.png
+Hotel Booking;"An app through which you can reserve an available hotel using your credit card.
+";https://github.com/Mahdi-Meyghani/Hotel-Booking;10.png
+Webcam Motion Detector;A program that monitors the computer webcam and sends an email when a new object enters the view.;https://github.com/Mahdi-Meyghani/Webcam-Motion-Detector;11.png
+Book Analysis;This app is designed to perform comprehensive data analysis and natural language processing (NLP) on a book.;https://github.com/Mahdi-Meyghani/Book-Analysis;12.png
+Flask Job Application;A Flask web job application form with an email-sending feature and an SQL database.;https://github.com/Mahdi-Meyghani/Job-Application-Form;13.png
+Django Job Application;A Django web job application form with an email-sending feature and an SQL database.;https://github.com/Mahdi-Meyghani/Django-Job-Application;14.png
+Movie Recommendation System;A movie recommendation system to show the recommended movies related to a particular movie.;https://github.com/Mahdi-Meyghani/Movie-Recommendation-System;15.png
+Visualizing Weather Forecast;A data web app that visualizes the weather forecast for the next five days of any city.;https://github.com/Mahdi-Meyghani/Weather-Forecast-Data-App;16.png
+Student Management System;A desktop PyQt6 GUI app for managing university student data with an SQL database backend.;https://github.com/Mahdi-Meyghani/Student-Management-System;17.png
+School Management System;A desktop PyQt6 GUI app for managing complex university data with a MySQL database backend.;https://github.com/Mahdi-Meyghani/School-Management-System;18.png
+Restaurant Menu Web App;A Django web app to let customers see a restaurant menu and meal availability.;https://github.com/Mahdi-Meyghani/Restaurant-Web-Application;19.png
+Invoicing Python Package;A Python package that converts Excel invoices into PDFs.;https://github.com/Mahdi-Meyghani/Invoicing-Python-Package;20.png
