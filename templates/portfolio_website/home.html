@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahdi's Portfolio</title>
+    <title>Mahdi Meyghani</title>
     {% load static %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'portfolio_website/style.css' %}">
@@ -32,7 +32,7 @@
                     <div class="project-item">
                         {% for project in projects_left %}
                             <div class="project">
-                                <h5>{{ project.title }}</h5>
+                                <h2>{{ project.title }}</h2>
                                 <p>{{ project.description }}</p>
                                 <img src="{% static 'portfolio_website/pictures/'|add:project.image %}" alt="{{ project.title }}" class="img-fluid">
                                 <a href="{{ project.url }}" class="btn btn-primary mt-2">Source Code</a>
@@ -43,13 +43,18 @@
                     <div class="project-item">
                         {% for project in projects_right %}
                             <div class="project">
-                                <h5>{{ project.title }}</h5>
+                                <h2>{{ project.title }}</h2>
                                 <p>{{ project.description }}</p>
                                 <img src="{% static 'portfolio_website/pictures/'|add:project.image %}" alt="{{ project.title }}" class="img-fluid">
                                 <a href="{{ project.url }}" class="btn btn-primary mt-2">Source Code</a>
                             </div>
                         {% endfor %}
                     </div>
+                </div>
+
+                <!-- Click for More Link at the end -->
+                <div class="click-more-container">
+                    <a href="https://github.com/Mahdi-Meyghani" class="btn btn-primary mt-3">Click for More...</a>
                 </div>
             </div>
         </div>

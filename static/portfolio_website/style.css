@@ -60,3 +60,17 @@ body {
     flex: 0 0 48%; /* Adjust to make space between items */
     margin-bottom: 30px; /* Space between projects */
 }
+
+.project {
+    margin-top: 50px; /* Add space above each project */
+}
+
+/* Click for More link styling */
+.click-more-container {
+    margin-top: 50px; /* Space above the link */
+    margin-bottom: 100px; /* Space below the link */
+}
+
+.click-more-container .btn {
+    margin-top: 20px; /* Space above the button */
+}
