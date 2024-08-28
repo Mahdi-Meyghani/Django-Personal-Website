@@ -5,6 +5,7 @@ body {
 }
 
 .img-fluid {
+    margin-bottom: 1000px;
     width: 100%;
     height: auto;
 }
