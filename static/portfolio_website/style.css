@@ -1,25 +1,37 @@
 /* static/portfolio_website/style.css */
+
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light gray text */
+    margin: 0;
+    padding: 0;
 }
 
+/* Images */
 .img-fluid {
     width: 100%;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8); /* Soft shadow for images */
 }
 
+/* Typography */
 .display-4 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 300;
     line-height: 1.2;
+    color: #00ff99; /* Neon green for titles */
 }
 
 .lead {
     font-size: 1.2em;
     line-height: 1.5;
+    color: #b0b0b0; /* Softer gray for lead text */
 }
 
+/* Arrow Styling */
 .arrow-container {
     position: relative;
     width: 100%;
@@ -29,9 +41,10 @@ body {
 .img-arrow {
     width: 80%;
     height: auto;
+    filter: invert(1); /* Inverts arrow color for dark background */
 }
 
-/* Flexbox layout for top content */
+/* Layout */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -40,17 +53,17 @@ body {
 }
 
 .left-content {
-    flex: 0 0 40%; /* Adjust width as needed */
+    flex: 0 0 40%;
     text-align: center;
 }
 
 .right-content {
     flex: 1;
     text-align: left;
-    padding-left: 20px; /* Add space between image and text */
+    padding-left: 20px;
 }
 
-/* Projects Container */
+/* Projects */
 .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -58,25 +71,51 @@ body {
 }
 
 .project-item {
-    flex: 0 0 48%; /* Adjust to make space between items */
-    margin-bottom: 30px; /* Space between projects */
+    flex: 0 0 48%;
+    margin-bottom: 30px;
+    background-color: #1e1e1e; /* Dark background for project items */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9); /* More pronounced shadow */
 }
 
-.project {
-    margin-top: 50px; /* Add space above each project */
+.project h2 {
+    color: #00ccff; /* Neon blue for project titles */
 }
 
-/* Click for More link styling */
-.click-more-container {
-    margin-top: 50px; /* Space above the link */
-    margin-bottom: 50px; /* Space below the link */
+.project p {
+    color: #c0c0c0;
 }
 
+.project .btn-primary {
+    background-color: #00ccff;
+    border-color: #00ccff;
+    color: #121212;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.project .btn-primary:hover {
+    background-color: #00ff99;
+    border-color: #00ff99;
+    color: #121212;
+}
+
+/* Click for More */
 .click-more-container .btn {
-    margin-top: 20px; /* Space above the button */
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: #00ff99;
+    border-color: #00ff99;
+    color: #121212;
 }
 
-/* Responsive design for mobile view */
+.click-more-container .btn:hover {
+    background-color: #00ccff;
+    border-color: #00ccff;
+    color: #121212;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .top-content {
         flex-direction: column;
@@ -89,10 +128,6 @@ body {
         padding-left: 0;
     }
 
-    .right-content {
-        padding-top: 20px;
-    }
-
     .project-container {
         flex-direction: column;
         align-items: center;
@@ -100,38 +135,77 @@ body {
 
     .project-item {
         width: 100%;
-        margin-bottom: 20px; /* Space between projects */
+        margin-bottom: 20px;
     }
 }
 
-/* Navbar margin adjustments for responsive design */
-.navbar-nav {
-    margin-left: 140px; /* Adjust to align with content */
-}
-
-@media (max-width: 991px) { /* Small to medium screens */
-    .navbar-nav {
-        margin-left: 0; /* Remove margin on mobile */
-    }
-}
-
-/* Make the navbar sticky */
-.navbar-wrapper {
-    position: sticky;
-    top: 0;
-    z-index: 1020; /* Ensure the navbar stays on top of other content */
-}
-
-/* Optional: Add shadow to the navbar for better visibility */
+/* Navbar */
 .navbar {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
 
-/* Custom animation durations */
-.animate__animated.animate__fadeIn {
-    animation-duration: 2s; /* Very slow animation */
+.navbar a {
+    color: #00ccff;
 }
 
-.animate__animated.animate__fadeInUp {
-    animation-duration: 2s; /* Very slow animation */
+.navbar a:hover {
+    color: #00ff99;
+}
+
+/* Animations */
+.animate__animated {
+    animation-duration: 3s; /* Slower animation for futuristic feel */
+}
+
+.animate__fadeIn,
+.animate__fadeInUp {
+    animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1); /* Smooth easing */
+}
+
+/* Form Styles */
+.form-group label {
+    color: #00ccff; /* Neon blue labels */
+}
+
+.form-group .form-control {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #00ccff;
+    border-radius: 5px;
+}
+
+.form-group .form-control:focus {
+    border-color: #00ff99;
+    box-shadow: 0 0 10px rgba(0, 255, 153, 0.7);
+}
+
+.btn-primary {
+    background-color: #00ccff;
+    border-color: #00ccff;
+    color: #121212;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #00ff99;
+    border-color: #00ff99;
+    color: #121212;
+}
+
+/* Alert Styles */
+.alert {
+    background-color: #1e1e1e;
+    border: 1px solid #00ccff;
+    color: #e0e0e0;
+}
+
+.alert-success {
+    border-color: #00ff99;
+    color: #00ff99;
+}
+
+.alert-danger {
+    border-color: #ff4444;
+    color: #ff4444;
 }
