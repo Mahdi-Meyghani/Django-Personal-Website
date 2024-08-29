@@ -3,8 +3,8 @@
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Light gray text */
+    background-color: #121212;
+    color: #e0e0e0;
     margin: 0;
     padding: 0;
 }
@@ -14,7 +14,7 @@ body {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8); /* Soft shadow for images */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
 }
 
 /* Typography */
@@ -22,13 +22,13 @@ body {
     font-size: 3rem;
     font-weight: 300;
     line-height: 1.2;
-    color: #00ff99; /* Neon green for titles */
+    color: #00ff99;
 }
 
 .lead {
     font-size: 1.2em;
     line-height: 1.5;
-    color: #b0b0b0; /* Softer gray for lead text */
+    color: #b0b0b0;
 }
 
 /* Arrow Styling */
@@ -41,7 +41,7 @@ body {
 .img-arrow {
     width: 80%;
     height: auto;
-    filter: invert(1); /* Inverts arrow color for dark background */
+    filter: invert(1);
 }
 
 /* Layout */
@@ -64,14 +64,12 @@ body {
 }
 
 /* Projects */
-/* Margin for Projects */
 .project {
     margin-top: 40px;
 }
 
-/* Higher specificity */
 .project-item .btn-source-code {
-    margin-top: 20px !important; /* Ensure the margin is applied */
+    margin-top: 20px !important;
 }
 
 .project-container {
@@ -81,18 +79,18 @@ body {
 }
 
 .project-item {
-    flex: 0 0 48%; /* Adjust width as needed, e.g., 48% for two projects per row */
-    margin-bottom: 20px; /* Space between each project */
-    background-color: #1e1e1e; /* Dark background for project items */
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+    background-color: #1e1e1e;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9); /* More pronounced shadow */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
 }
 
 .project-item h2 {
-    color: #00ccff !important; /* Neon blue for project titles */
-    font-size: 2rem; /* h2 size */
-    margin-top: 0; /* Remove top margin if necessary */
+    color: #00ccff !important;
+    font-size: 2rem;
+    margin-top: 0;
 }
 
 .project-item p {
@@ -153,34 +151,30 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #1e1e1e; /* Dark background for navbar */
-    box-shadow: 0 2px 10px rgb(0, 255, 153); /* Shadow for depth */
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 10px rgb(0, 255, 153);
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensure navbar stays on top */
+    z-index: 1000;
     width: 100%;
 }
 
-/* Space for the entire group of navigation items from the left border */
 .navbar-nav {
     margin-left: 130px;
 }
 
-/* Remove margin for mobile view */
 @media (max-width: 768px) {
     .navbar-nav {
         margin-left: 0;
     }
 }
 
-
-/* Additional adjustments to ensure consistency */
 .navbar-wrapper {
     width: 100%;
 }
 
 .navbar .navbar-toggler {
-    border-color: #00ccff; /* Neon blue for the toggler */
+    border-color: #00ccff;
 }
 
 .navbar .navbar-toggler-icon {
@@ -188,31 +182,31 @@ body {
 }
 
 .navbar a {
-    color: #00ccff; /* Neon blue for nav links */
+    color: #00ccff;
 }
 
 .navbar a:hover {
-    color: #00ff99; /* Neon green on hover */
+    color: #00ff99;
 }
 
 /* Optional: Styling for active links */
 .navbar .nav-item.active .nav-link {
-    color: #00ff99 !important; /* Neon green for active link */
+    color: #00ff99 !important;
 }
 
 /* Animations */
 .animate__animated {
-    animation-duration: 3s; /* Slower animation for futuristic feel */
+    animation-duration: 3s;
 }
 
 .animate__fadeIn,
 .animate__fadeInUp {
-    animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1); /* Smooth easing */
+    animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
 }
 
 /* Form Styles */
 .form-group label {
-    color: #00ccff; /* Neon blue labels */
+    color: #00ccff;
 }
 
 .form-group .form-control {
@@ -256,4 +250,3 @@ body {
     border-color: #ff4444;
     color: #ff4444;
 }
-

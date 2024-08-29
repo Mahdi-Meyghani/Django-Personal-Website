@@ -8,7 +8,7 @@ from django.core.validators import validate_email
 
 
 def home(request):
-    projects = Project.objects.all()  # Retrieve all projects from the database
+    projects = Project.objects.all()
     return render(request, 'portfolio_website/home.html', {'projects': projects})
 
 
@@ -30,7 +30,7 @@ def contact(request):
                 )
                 email_message.send()
                 messages.success(request, 'Your email has been sent successfully. Thanks 😄')
-                return redirect('contact')  # Redirect to clear the form data
+                return redirect('contact')
             except ValidationError:
                 messages.error(request, 'Invalid email address. 😣')
             except Exception:
