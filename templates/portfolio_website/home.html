@@ -27,7 +27,7 @@
                     <h2>{{ project.title }}</h2>
                     <p>{{ project.description }}</p>
                     <img src="{% static 'portfolio_website/pictures/'|add:project.image %}" alt="{{ project.title }}" class="img-fluid">
-                    <a href="{{ project.url }}" class="btn btn-primary mt-2">Source Code</a>
+                    <a href="{{ project.url }}" class="btn btn-primary btn-source-code mt-2">Source Code</a>
                 </div>
             {% endfor %}
         </div>
