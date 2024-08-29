@@ -143,11 +143,11 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #1e1e1e;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    background-color: #1e1e1e; /* Dark background for navbar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8); /* Shadow for depth */
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensures navbar stays on top */
+    z-index: 1000; /* Ensure navbar stays on top */
     width: 100%;
 }
 
@@ -156,12 +156,25 @@ body {
     width: 100%;
 }
 
+.navbar .navbar-toggler {
+    border-color: #00ccff; /* Neon blue for the toggler */
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='%2300ccff' stroke-linecap='round' stroke-width='2' d='M5 7h20M5 15h20M5 23h20'/%3E%3C/svg%3E");
+}
+
 .navbar a {
-    color: #00ccff;
+    color: #00ccff; /* Neon blue for nav links */
 }
 
 .navbar a:hover {
-    color: #00ff99;
+    color: #00ff99; /* Neon green on hover */
+}
+
+/* Optional: Styling for active links */
+.navbar .nav-item.active .nav-link {
+    color: #00ff99 !important; /* Neon green for active link */
 }
 
 /* Animations */
