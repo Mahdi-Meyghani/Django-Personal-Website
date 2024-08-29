@@ -151,6 +151,19 @@ body {
     width: 100%;
 }
 
+/* Space for the entire group of navigation items from the left border */
+.navbar-nav {
+    margin-left: 130px;
+}
+
+/* Remove margin for mobile view */
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-left: 0;
+    }
+}
+
+
 /* Additional adjustments to ensure consistency */
 .navbar-wrapper {
     width: 100%;
