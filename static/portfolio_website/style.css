@@ -71,30 +71,32 @@ body {
 }
 
 .project-item {
-    flex: 0 0 48%;
-    margin-bottom: 30px;
+    flex: 0 0 48%; /* Adjust width as needed, e.g., 48% for two projects per row */
+    margin-bottom: 20px; /* Space between each project */
     background-color: #1e1e1e; /* Dark background for project items */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9); /* More pronounced shadow */
 }
 
-.project h2 {
-    color: #00ccff; /* Neon blue for project titles */
+.project-item h2 {
+    color: #00ccff !important; /* Neon blue for project titles */
+    font-size: 2rem; /* h2 size */
+    margin-top: 0; /* Remove top margin if necessary */
 }
 
-.project p {
+.project-item p {
     color: #c0c0c0;
 }
 
-.project .btn-primary {
+.project-item .btn-primary {
     background-color: #00ccff;
     border-color: #00ccff;
     color: #121212;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.project .btn-primary:hover {
+.project-item .btn-primary:hover {
     background-color: #00ff99;
     border-color: #00ff99;
     color: #121212;
@@ -210,6 +212,7 @@ body {
     color: #ff4444;
 }
 
+/* Margin for Projects */
 .project {
     margin-top: 40px;
 }

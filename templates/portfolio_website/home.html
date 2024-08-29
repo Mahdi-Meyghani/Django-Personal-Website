@@ -20,30 +20,16 @@
             </div>
         </div>
 
-        <!-- Projects in Left Column (1-10) and Right Column (11-20) -->
+        <!-- Projects: Each Project Has Its Own Box -->
         <div class="project-container">
-            <!-- Left Projects -->
-            <div class="project-item">
-                {% for project in projects_left %}
-                    <div class="project animate-on-scroll">
-                        <h2>{{ project.title }}</h2>
-                        <p>{{ project.description }}</p>
-                        <img src="{% static 'portfolio_website/pictures/'|add:project.image %}" alt="{{ project.title }}" class="img-fluid">
-                        <a href="{{ project.url }}" class="btn btn-primary mt-2">Source Code</a>
-                    </div>
-                {% endfor %}
-            </div>
-            <!-- Right Projects -->
-            <div class="project-item">
-                {% for project in projects_right %}
-                    <div class="project animate-on-scroll">
-                        <h2>{{ project.title }}</h2>
-                        <p>{{ project.description }}</p>
-                        <img src="{% static 'portfolio_website/pictures/'|add:project.image %}" alt="{{ project.title }}" class="img-fluid">
-                        <a href="{{ project.url }}" class="btn btn-primary mt-2">Source Code</a>
-                    </div>
-                {% endfor %}
-            </div>
+            {% for project in projects %}
+                <div class="project-item animate-on-scroll">
+                    <h2>{{ project.title }}</h2>
+                    <p>{{ project.description }}</p>
+                    <img src="{% static 'portfolio_website/pictures/'|add:project.image %}" alt="{{ project.title }}" class="img-fluid">
+                    <a href="{{ project.url }}" class="btn btn-primary mt-2">Source Code</a>
+                </div>
+            {% endfor %}
         </div>
 
         <!-- Click for More Link at the end -->
