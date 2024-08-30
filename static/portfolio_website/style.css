@@ -250,3 +250,15 @@ body {
     border-color: #ff4444;
     color: #ff4444;
 }
+
+/* Links */
+/* Custom Link Styling */
+.custom-link {
+    color: #00ff99;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.custom-link:hover {
+    color: #00ccff;
+}
